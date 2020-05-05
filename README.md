@@ -8,7 +8,7 @@ in practice between computation and inversion (verification), and thus can be vi
 VDF because it requires the honest Eval to use greater than polylog(t) parallelism to run 
 in parallel time t (the delay parameter).
 
-##Sloth
+## Sloth
 
 Wesolowski proposed creating a more difficult puzzle for a small p by chaining a series of such puzzles together
 (interleaved with a simple permutation) in a construction called Sloth. However, this does not meet asymptotic definition
