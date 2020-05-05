@@ -10,12 +10,12 @@ import (
 	"math/big"
 )
 
-// VDFSqrt --
+// VDFSquare_rt --
 type VDFSquare_rt struct {
 	p *big.Int
 }
 
-// NewVDFSqrt -- creates new VDF.
+// NewVDF_Square_rt -- creates a new VDF.
 func NewVDF_Square_rt(p *big.Int) *VDFSquare_rt {
 	return &VDFSquare_rt{
 		p: p,
@@ -34,7 +34,8 @@ func (v *VDFSquare_rt) quadraticResidue(x *big.Int) bool {
 	return t.Cmp(big.NewInt(1)) == 0
 }
 
-// Delay -- eval the delay.
+// Delay -- evaluates the delay.
+
 func (v *VDFSquare_rt) Delay(t int64, x *big.Int) *big.Int {
 	var r *big.Int
 	m := new(big.Int).Set(x)
@@ -48,7 +49,8 @@ func (v *VDFSquare_rt) Delay(t int64, x *big.Int) *big.Int {
 	return r
 }
 
-// Verify -- verify the result y.
+// Verify -- verify the result.
+
 func (v *VDFSquare_rt) Verify(t int64, x *big.Int, y *big.Int) bool {
 	var r *big.Int
 	n := new(big.Int).Set(y)
