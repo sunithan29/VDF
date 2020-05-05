@@ -25,7 +25,7 @@ To build from the source code you need to have a working Go environment with ver
 
 To run: 
 
-      $ ./vdf --x=7 --t=1000
+      $ ./vdf --u=7 --t=1000
 ## References
 1. [Sloth(Quadratic Residue) Verifiable Delay Functions](https://eprint.iacr.org/2018/601.pdf). Boneh, 2018
 2. [Efficient Verifiable Delay Functions](https://eprint.iacr.org/2018/623.pdf). Wesolowski, 2018
