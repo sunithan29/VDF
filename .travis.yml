@@ -1,0 +1,11 @@
+language: go
+
+matrix:
+  include:
+    - os: linux
+      dist: bionic
+      sudo: true
+      go: 1.14.x
+      script:
+        - make build
+       
