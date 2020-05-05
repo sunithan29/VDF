@@ -19,7 +19,10 @@ Implementation notes:
 
 To build from the source code you need to have a working Go environment with version 1.14 or greater installed.
 
-       $ cd vdf
+       $ git clone https://github.com/sunithan29/VDF
+VDF 
+       
+       $ cd VDF
        
        $ make build
 
